@@ -1,0 +1,7 @@
+{
+  "name": "AI 손금 운세 - Palmistry AI",
+  "description": "최첨단 AI 기술로 손바닥 사진을 분석하여 당신의 성격, 건강, 운명을 해석해주는 신비로운 손금 서비스입니다.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
