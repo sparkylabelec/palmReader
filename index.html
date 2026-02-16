@@ -10,17 +10,17 @@
     <style>
         body {
             font-family: 'Noto Sans KR', sans-serif;
-            background: radial-gradient(circle at center, #1a1b3b 0%, #050510 100%);
+            background: radial-gradient(circle at center, #500724 0%, #1a0510 100%);
             color: #e2e8f0;
             min-height: 100vh;
         }
         .mystic-glow {
-            box-shadow: 0 0 20px rgba(139, 92, 246, 0.3);
+            box-shadow: 0 0 20px rgba(236, 72, 153, 0.3);
         }
         .scanning-line {
             height: 2px;
-            background: linear-gradient(90deg, transparent, #8b5cf6, transparent);
-            box-shadow: 0 0 10px #8b5cf6;
+            background: linear-gradient(90deg, transparent, #ec4899, transparent);
+            box-shadow: 0 0 10px #ec4899;
             animation: scan 2s linear infinite;
         }
         @keyframes scan {
@@ -38,7 +38,7 @@
             width: 48px;
             height: 48px;
             border: 5px solid #FFF;
-            border-bottom-color: #8b5cf6;
+            border-bottom-color: #ec4899;
             border-radius: 50%;
             display: inline-block;
             box-sizing: border-box;
@@ -64,7 +64,7 @@
     <div id="root">
         <div class="fixed inset-0 flex items-center justify-center flex-col gap-4">
             <div class="loader"></div>
-            <p class="text-purple-300 text-sm animate-pulse">운명의 문을 여는 중...</p>
+            <p class="text-pink-300 text-sm animate-pulse">운명의 문을 여는 중...</p>
         </div>
     </div>
     <script type="module" src="./index.tsx"></script>

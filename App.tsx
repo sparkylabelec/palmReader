@@ -97,7 +97,7 @@ const App: React.FC = () => {
     <div className="min-h-screen p-4 md:p-8 flex flex-col items-center justify-center">
       <header className="mb-12 text-center fade-in">
         <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-white mb-2">
-          신비한 <span className="text-purple-500">AI 운세</span>
+          신비한 <span className="text-pink-500">AI 운세</span>
         </h1>
         <p className="text-slate-400 text-lg">AI가 읽어주는 당신의 운명과 타고난 기질</p>
       </header>
@@ -109,7 +109,7 @@ const App: React.FC = () => {
               onClick={() => startSelection('PALM')}
               className="bg-white/5 border border-white/10 p-8 rounded-3xl text-center mystic-glow hover:bg-white/10 transition-all group"
             >
-              <div className="w-20 h-20 bg-purple-500/20 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+              <div className="w-20 h-20 bg-pink-500/20 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
                 <span className="text-4xl">✋</span>
               </div>
               <h3 className="text-xl font-bold text-white mb-2">손금 보기</h3>
@@ -120,7 +120,7 @@ const App: React.FC = () => {
               onClick={() => startSelection('FACE')}
               className="bg-white/5 border border-white/10 p-8 rounded-3xl text-center mystic-glow hover:bg-white/10 transition-all group"
             >
-              <div className="w-20 h-20 bg-indigo-500/20 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+              <div className="w-20 h-20 bg-rose-500/20 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
                 <span className="text-4xl">👤</span>
               </div>
               <h3 className="text-xl font-bold text-white mb-2">관상 보기</h3>
@@ -132,7 +132,7 @@ const App: React.FC = () => {
         {state === 'SELECTING' && (
           <div className="flex flex-col gap-4 fade-in">
             <div className="bg-white/5 border border-white/10 p-8 rounded-3xl text-center mystic-glow mb-4">
-              <div className="w-24 h-24 bg-purple-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
+              <div className="w-24 h-24 bg-pink-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
                 <span className="text-5xl">{readingType === 'PALM' ? '✋' : '👤'}</span>
               </div>
               <h2 className="text-xl text-white font-medium mb-2">
@@ -146,7 +146,7 @@ const App: React.FC = () => {
               
               <button
                 onClick={startCamera}
-                className="w-full py-4 bg-purple-600 hover:bg-purple-500 text-white font-bold rounded-2xl transition-all mb-3 active:scale-[0.98]"
+                className="w-full py-4 bg-pink-600 hover:bg-pink-500 text-white font-bold rounded-2xl transition-all mb-3 active:scale-[0.98]"
               >
                 카메라로 촬영하기
               </button>
