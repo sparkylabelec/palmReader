@@ -34,6 +34,20 @@
             from { opacity: 0; transform: translateY(10px); }
             to { opacity: 1; transform: translateY(0); }
         }
+        .loader {
+            width: 48px;
+            height: 48px;
+            border: 5px solid #FFF;
+            border-bottom-color: #8b5cf6;
+            border-radius: 50%;
+            display: inline-block;
+            box-sizing: border-box;
+            animation: rotation 1s linear infinite;
+        }
+        @keyframes rotation {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
     </style>
 <script type="importmap">
 {
@@ -47,6 +61,12 @@
 </script>
 </head>
 <body>
-    <div id="root"></div>
+    <div id="root">
+        <div class="fixed inset-0 flex items-center justify-center flex-col gap-4">
+            <div class="loader"></div>
+            <p class="text-purple-300 text-sm animate-pulse">운명의 문을 여는 중...</p>
+        </div>
+    </div>
+    <script type="module" src="./index.tsx"></script>
 </body>
 </html>
